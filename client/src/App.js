@@ -8,6 +8,7 @@ import Hotel from "./pages/hotel/Hotel";
 import List from "./pages/list/List";
 import Login from "./pages/login/Login";
 import RegisterForm from "./pages/RegisterForm/RegisterForm";
+import Chatbot from "./pages/Chat_bot/Chatbot";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/hotels/:id" element={<Hotel/>}/>
         <Route path="/login" element={<Login/>}/>
         <Route path="/register" element={<RegisterForm/>}/>
+        <Route path="/chatbot" element={<Chatbot/>}/>
       </Routes>
     </BrowserRouter>
   );
