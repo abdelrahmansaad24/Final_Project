@@ -6,14 +6,20 @@
 }
 
 .lContainer {
+  width: 500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
 .lInput{
-  height: 30px;
+  position: relative;
+  left : 20 px;
+  height: 50px;
+  width: 100%;
   padding: 10px;
+  border: 2px solid rgb(230, 230, 230);
+  border-radius: 5px;
 }
 
 .lButton {
@@ -29,4 +35,10 @@
 .lButton:disabled{
   background-color: #0071c28c;
   cursor: not-allowed;
+}
+.register{
+  text-align: center;
+}
+label{
+  font-weight: 600;
 }
