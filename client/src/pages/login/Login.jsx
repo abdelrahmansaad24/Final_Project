@@ -2,6 +2,7 @@ import axios from "axios";
 import { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
+import { Link } from "react-router-dom";
 import "./login.css";
 
 const Login = () => {
@@ -34,6 +35,7 @@ const Login = () => {
   return (
     <div className="login">
       <div className="lContainer">
+        <label htmlFor="username"> User Name</label>
         <input
           type="text"
           placeholder="username"
@@ -41,9 +43,10 @@ const Login = () => {
           onChange={handleChange}
           className="lInput"
         />
+        <label htmlFor="username"> Password</label>
         <input
           type="password"
-          placeholder="password"
+          placeholder=""
           id="password"
           onChange={handleChange}
           className="lInput"
@@ -52,6 +55,11 @@ const Login = () => {
           Login
         </button>
         {error && <span>{error.message}</span>}
+        <div className="register">Don't have account ? 
+            <Link to="/register" style={{ color: "Red" }}> 
+              <span >  Register now..</span>
+            </Link>
+        </div>
       </div>
     </div>
   );

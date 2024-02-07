@@ -15,7 +15,8 @@
 }
 
 .logo{
-  font-weight: 500;
+  font-weight: 1000;
+  font-size: 25px;
 }
 
 .navButton{
@@ -24,4 +25,12 @@
   padding: 5px 10px;
   cursor: pointer;
   color: #003580;
+}
+.headerBtn{
+  background-color: #0071c2;
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
