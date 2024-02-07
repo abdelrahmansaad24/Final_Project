@@ -5,7 +5,7 @@ import "./chatfloat.css"
 
 const chatfloat = ()=>{
     return(
-        <div className="container">
+        <div className="chat_container">
             <Link to="/chatbot" style={{ color: "inherit", textDecoration: "none"}}>
               <button className="chat_button"><IoIosChatboxes className="icon"/></button>
               </Link>

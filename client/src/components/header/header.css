@@ -48,6 +48,7 @@
 }
 
 .headerSearch {
+  color: rgb(0, 0, 0);
   background-color: white;
   border: 3px solid #febb02;
   display: flex;

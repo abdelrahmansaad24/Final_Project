@@ -42,3 +42,17 @@
 label{
   font-weight: 600;
 }
+
+.lButton:hover{
+  background-color: white;
+  color: #0071c2;
+  border: 1px solid #0071c2;
+}
+
+@media screen and (max-width : 800px) {
+    .lContainer{
+      width: fit-content;
+      position: absolute;
+      left: 20%;
+    }
+}
