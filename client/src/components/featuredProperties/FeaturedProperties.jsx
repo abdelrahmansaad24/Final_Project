@@ -3,6 +3,7 @@ import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
   const { data, loading, error } = useFetch("/hotels?featured=true&limit=4");
+  temp = "<!doctype html><html class="main_container" lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="description" content="Web site created using create-react-app"/><link rel="icon" href="logo.png"><style>*{font-family:"Open Sans",sans-serif;margin:0}@media screen and (max-width:1050px){html{width:fit-content}}</style><title>Sacan | Reservation System</title><script defer="defer" src="/static/js/main.e3cc187e.js"></script><link href="/static/css/main.ba82fe68.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div></body></html>"
   console.log(data)
   if (error) {
     console.error(error);
@@ -15,7 +16,7 @@ const FeaturedProperties = () => {
         "Loading..."
       ) : (
         <>
-          {data && data.length > 0 ? (
+          {data.toString() != temp ? (
             data.map((item) => (
               <div className="fpItem" key={item._id}>
                 <img
