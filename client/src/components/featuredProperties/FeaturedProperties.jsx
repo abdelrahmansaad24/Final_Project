@@ -6,7 +6,7 @@ const FeaturedProperties = () => {
   flag = true;
   data.map((item) => ( if (item.name != null || item.name != ""){
     flag = false;
-  }
+  }))
   return (
     <div className="fp">
       {loading ? (
