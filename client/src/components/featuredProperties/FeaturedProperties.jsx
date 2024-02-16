@@ -3,12 +3,15 @@ import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
   const { data, loading, error } = useFetch("/hotels?featured=true&limit=4");
-  console.log(data.type);
+  flag = true;
+  data.map((item) => ( if (item.name != null || item.name != ""){
+    flag = false;
+  }
   return (
     <div className="fp">
       {loading ? (
         "Loading"
-      ) : (
+      ) : flage ? (
         <>
           {data.map((item) => (
             <div className="fpItem" key={item._id}>
@@ -27,7 +30,7 @@ const FeaturedProperties = () => {
             </div>
           ))}
         </>
-      )}
+      ): "no Properties"}
     </div>
   );
 };
