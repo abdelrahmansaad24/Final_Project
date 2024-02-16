@@ -25,9 +25,10 @@ const FeaturedProperties = () => {
                 <span>Excellent</span>
               </div>}
             </div>
-          ))}
-          } catch (error) {
-              console.error(error);}
+          ))} catch (error) {
+              console.error(error);
+          }
+          }
         </>
       )}
     </div>
