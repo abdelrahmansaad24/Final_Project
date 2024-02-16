@@ -3,7 +3,7 @@ import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
   const { data, loading, error } = useFetch("/hotels?featured=true&limit=4");
-  console.log(json.parse(data))
+  console.log(JSON.parse(data))
   return (
     <div className="fp">
       {loading ? (
